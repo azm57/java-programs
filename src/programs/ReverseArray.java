@@ -1,21 +1,21 @@
 package programs;
 
-import java.util.Arrays;
-
 public class ReverseArray {
 
 	public static void main(String[] args) {
-		int arr[] = {1,2,3,4,5};
-		int rev[] = {0,0,0,0,0};
-		int j = 0;
-		System.out.println(Arrays.toString(arr));
-		for(int i=arr.length-1;i>=0;i--)
-		{
-			rev[j] = arr[i];
-			j++;
+		int arr[] = { 1, 2, 3, 4, 5 };
+		for(int k=0;k<arr.length;k++)
+			System.out.print(arr[k]+" ");
+		
+		System.out.println();
+		
+		int revArr[] = new int[arr.length]; 
+		int j=0;
+		for (int i = arr.length - 1; i >= 0; i--) {
+			revArr[j++] = arr[i];
 		}
-		System.out.println(Arrays.toString(rev));
-
+		for(int k=0;k<revArr.length;k++)
+			System.out.print(revArr[k]+" ");
 	}
 
 }
