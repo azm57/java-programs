@@ -11,7 +11,7 @@ public class StrBeautifulBinary {
 		while (i < n - 2) {
 			if (input.substring(i, i + 3).equals("010")) {
 				answer++;
-				i += 3;
+				i += 3	;
 				continue;
 			}
 			i++;
