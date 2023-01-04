@@ -15,6 +15,7 @@ public class PalindromStr {
 		for (int i = 0; i < len / 2; i++) {
 			if (!(chrArr[i] == chrArr[len - i - 1])) {
 				res = false;
+				break;
 			}
 		}
 		if (res)
